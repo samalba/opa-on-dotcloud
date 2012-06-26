@@ -1,0 +1,9 @@
+opa:
+    type: custom
+    buildscript: builder
+    process: ~/run
+    ports:
+        www: http
+
+db:
+    type: mongodb
