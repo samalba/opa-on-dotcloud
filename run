@@ -4,6 +4,7 @@ export NODE_PATH="${HOME}/opa/lib/opa/node_modules"
 MONGO_URL="${DOTCLOUD_DB_MONGODB_LOGIN}:${DOTCLOUD_DB_MONGODB_PASSWORD}@${DOTCLOUD_DB_MONGODB_HOST}:${DOTCLOUD_DB_MONGODB_PORT}"
 
 exec ~/app.js \
-         --log-path /var/log/supervisor \
+         --logs-path /var/log/supervisor \
          --db-remote "$MONGO_URL" \
-         --http-port $PORT_WWW
+         --http-port $PORT_WWW \
+         $@
