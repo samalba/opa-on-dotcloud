@@ -13,7 +13,7 @@ fi
 mv run ~/
 
 # Install node dependencies
-npm mongodb formidable nodemailer imap
+npm install mongodb formidable nodemailer imap
 
 # Compiling the OPA app
 ~/opa/bin/opa app.opa -o ~/app.js
