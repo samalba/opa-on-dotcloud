@@ -1,6 +1,6 @@
 #!/bin/sh
 
-BINURL="http://download.opalang.org/linux/opa_1.0.2%2Bbuild2276_amd64.release.run"
+BINURL="http://download.opalang.org/linux/opa_1.0.4%2Bbuild2403_amd64.release.run"
 
 # Installing OPA, first push only
 if [ ! -d ~/opa ] ; then
@@ -11,6 +11,9 @@ fi
 
 # Runscript
 mv run ~/
+
+# Install node dependencies
+npm mongodb formidable nodemailer imap
 
 # Compiling the OPA app
 ~/opa/bin/opa app.opa -o ~/app.js
