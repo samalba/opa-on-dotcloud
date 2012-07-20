@@ -7,13 +7,15 @@ if [ ! -d ~/opa ] ; then
     mkdir ~/opa
     wget $BINURL -O install
     sh install -- ~/opa
+    # Install node dependencies
+    npm install mongodb formidable nodemailer imap
 fi
 
 # Runscript
-mv run ~/
+cp run ~/
 
-# Install node dependencies
-npm install mongodb formidable nodemailer imap
+# Install the code
+cp opa.opa ~/
 
 # Compiling the OPA app
-~/opa/bin/opa app.opa -o ~/app.js
+cd ~ && ./opa/bin/opa app.opa -o app.js
