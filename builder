@@ -15,7 +15,7 @@ fi
 cp run ~/
 
 # Install the code
-cp opa.opa ~/
+cp app.opa ~/
 
 # Compiling the OPA app
 cd ~ && ./opa/bin/opa app.opa -o app.js
