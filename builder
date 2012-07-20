@@ -1,6 +1,6 @@
 #!/bin/sh
 
-BINURL="http://download.opalang.org/linux/opa_1.0.4%2Bbuild2403_amd64.release.run"
+BINURL="http://download.opalang.org/linux/opa_1.0.4+build2441_amd64.run"
 
 # Installing OPA, first push only
 if [ ! -d ~/opa ] ; then
